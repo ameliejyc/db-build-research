@@ -1,0 +1,5 @@
+psql -c "CREATE DATABASE research;"
+psql -c "CREATE USER teamawesome WITH PASSWORD 'password';"
+psql -c "GRANT ALL PRIVILEGES ON DATABASE research TO teamawesome;"
+psql -c "ALTER DATABASE research OWNER TO teamawesome;"
+psql research -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO teamawesome;"

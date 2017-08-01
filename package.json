@@ -1,0 +1,16 @@
+{
+  "name": "build-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db_build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "initDb": "bash setup-users.sh && node db_build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "env2": "^2.2.0",
+    "pg": "^7.0.2"
+  }
+}
